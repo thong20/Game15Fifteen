@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "RNTestCode",
-    "slug": "RNTestCode",
-    "version": "1.0.0",
+    "name": "15 Puzzle",
+    "slug": "RNGameOfFifteen",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -21,6 +21,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.thong20.game15puzzle",
+      "versionCode": 1
     }
   }
 }
