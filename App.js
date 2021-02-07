@@ -1,22 +1,24 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Puzzle from './components/puzzle'
 
-export default function App() {
+import Constants from 'expo-constants';
 
-    return (
-        <View style={styles.container}>
-            <Puzzle />
-        </View>
-    );
+
+export default function App() {
+  console.log('Expo.manifest:', Constants.manifest.version)
+  return (
+    <View style={styles.container}>
+      <Puzzle />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        // justifyContent: 'center',
-        
-    },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+      
+  },
 });
